@@ -1,0 +1,16 @@
+PODS:
+  - GGMGJRouter (0.1.0)
+
+DEPENDENCIES:
+  - GGMGJRouter (from `../`)
+
+EXTERNAL SOURCES:
+  GGMGJRouter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GGMGJRouter: 1b47bccb62edaad13a082d1b19bf15b34daffa0a
+
+PODFILE CHECKSUM: 354c387a6d70f4351ee16cf91174b2feeb3139b1
+
+COCOAPODS: 1.16.2

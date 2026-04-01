@@ -1,0 +1,6 @@
+framework module GGMGJRouter {
+  umbrella header "GGMGJRouter-umbrella.h"
+
+  export *
+  module * { export * }
+}
