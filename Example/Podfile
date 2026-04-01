@@ -1,9 +1,13 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '13.0'
 
 target 'GGMGJRouter_Example' do
   pod 'GGMGJRouter', :path => '../'
+
+  pod 'QMUIKit'
+
+  pod 'MJExtension'
 
   target 'GGMGJRouter_Tests' do
     inherit! :search_paths

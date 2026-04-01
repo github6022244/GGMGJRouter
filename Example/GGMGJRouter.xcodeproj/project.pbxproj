@@ -24,6 +24,22 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		C6E9E9D52F7CC663004DEABB /* GGUserInfoJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = C6E9E9D22F7CC663004DEABB /* GGUserInfoJSON.json */; };
+		C6E9E9D62F7CC663004DEABB /* GGRecommendSearchWordsJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = C6E9E9D12F7CC663004DEABB /* GGRecommendSearchWordsJSON.json */; };
+		C6E9E9D72F7CC663004DEABB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9E9D42F7CC663004DEABB /* SceneDelegate.m */; };
+		C6E9E9F52F7CC680004DEABB /* GGRouterEventDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9E9EB2F7CC680004DEABB /* GGRouterEventDemoViewController.m */; };
+		C6E9E9F62F7CC680004DEABB /* GGMGJTypeSafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9E9E92F7CC680004DEABB /* GGMGJTypeSafeViewController.m */; };
+		C6E9E9F72F7CC680004DEABB /* GGSearchModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9E9DE2F7CC680004DEABB /* GGSearchModuleManager.m */; };
+		C6E9E9F82F7CC680004DEABB /* GGInitModulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9E9E12F7CC680004DEABB /* GGInitModulesViewController.m */; };
+		C6E9E9F92F7CC680004DEABB /* GGMGJLifecycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9E9E72F7CC680004DEABB /* GGMGJLifecycleViewController.m */; };
+		C6E9E9FA2F7CC680004DEABB /* GGUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9E9F02F7CC680004DEABB /* GGUserManager.m */; };
+		C6E9E9FB2F7CC680004DEABB /* GGRecommendSearchWordsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9E9D92F7CC680004DEABB /* GGRecommendSearchWordsManager.m */; };
+		C6E9E9FC2F7CC680004DEABB /* GGUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9E9EE2F7CC680004DEABB /* GGUserInfoModel.m */; };
+		C6E9E9FD2F7CC680004DEABB /* GGRecommendSearchWordsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9E9DB2F7CC680004DEABB /* GGRecommendSearchWordsModel.m */; };
+		C6E9E9FE2F7CC680004DEABB /* GGMGJInterceptorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9E9E52F7CC680004DEABB /* GGMGJInterceptorViewController.m */; };
+		C6E9E9FF2F7CC680004DEABB /* GGMGJDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9E9E32F7CC680004DEABB /* GGMGJDebugViewController.m */; };
+		C6E9EA002F7CC680004DEABB /* GGUserModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9E9F32F7CC680004DEABB /* GGUserModuleManager.m */; };
+		C6E9EA042F7CC728004DEABB /* GGJSONConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9EA022F7CC728004DEABB /* GGJSONConvert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +57,8 @@
 		391885E0BF64235652EB4D13 /* Pods_GGMGJRouter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGMGJRouter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		392E104D7A1EF425C43686B5 /* Pods-GGMGJRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGMGJRouter_Example.release.xcconfig"; path = "Target Support Files/Pods-GGMGJRouter_Example/Pods-GGMGJRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3D9DE86F8661ED0F614D3C2D /* Pods_GGMGJRouter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGMGJRouter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F272F1DA1307EFE5FF861E7 /* GGMGJRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GGMGJRouter.podspec; path = ../GGMGJRouter.podspec; sourceTree = "<group>"; };
-		5A1E24B5E1F85BB6D16A09D7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4F272F1DA1307EFE5FF861E7 /* GGMGJRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GGMGJRouter.podspec; path = ../GGMGJRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5A1E24B5E1F85BB6D16A09D7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* GGMGJRouter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GGMGJRouter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,10 +78,40 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6E56D43CEAA43CB84CD98A17 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6E56D43CEAA43CB84CD98A17 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7321DD6EC6C7B42F56F0226A /* Pods-GGMGJRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGMGJRouter_Tests.release.xcconfig"; path = "Target Support Files/Pods-GGMGJRouter_Tests/Pods-GGMGJRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6E9E9D12F7CC663004DEABB /* GGRecommendSearchWordsJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GGRecommendSearchWordsJSON.json; sourceTree = "<group>"; };
+		C6E9E9D22F7CC663004DEABB /* GGUserInfoJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GGUserInfoJSON.json; sourceTree = "<group>"; };
+		C6E9E9D32F7CC663004DEABB /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		C6E9E9D42F7CC663004DEABB /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		C6E9E9D82F7CC680004DEABB /* GGRecommendSearchWordsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGRecommendSearchWordsManager.h; sourceTree = "<group>"; };
+		C6E9E9D92F7CC680004DEABB /* GGRecommendSearchWordsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGRecommendSearchWordsManager.m; sourceTree = "<group>"; };
+		C6E9E9DA2F7CC680004DEABB /* GGRecommendSearchWordsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGRecommendSearchWordsModel.h; sourceTree = "<group>"; };
+		C6E9E9DB2F7CC680004DEABB /* GGRecommendSearchWordsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGRecommendSearchWordsModel.m; sourceTree = "<group>"; };
+		C6E9E9DD2F7CC680004DEABB /* GGSearchModuleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGSearchModuleManager.h; sourceTree = "<group>"; };
+		C6E9E9DE2F7CC680004DEABB /* GGSearchModuleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGSearchModuleManager.m; sourceTree = "<group>"; };
+		C6E9E9E02F7CC680004DEABB /* GGInitModulesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGInitModulesViewController.h; sourceTree = "<group>"; };
+		C6E9E9E12F7CC680004DEABB /* GGInitModulesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGInitModulesViewController.m; sourceTree = "<group>"; };
+		C6E9E9E22F7CC680004DEABB /* GGMGJDebugViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGMGJDebugViewController.h; sourceTree = "<group>"; };
+		C6E9E9E32F7CC680004DEABB /* GGMGJDebugViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGMGJDebugViewController.m; sourceTree = "<group>"; };
+		C6E9E9E42F7CC680004DEABB /* GGMGJInterceptorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGMGJInterceptorViewController.h; sourceTree = "<group>"; };
+		C6E9E9E52F7CC680004DEABB /* GGMGJInterceptorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGMGJInterceptorViewController.m; sourceTree = "<group>"; };
+		C6E9E9E62F7CC680004DEABB /* GGMGJLifecycleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGMGJLifecycleViewController.h; sourceTree = "<group>"; };
+		C6E9E9E72F7CC680004DEABB /* GGMGJLifecycleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGMGJLifecycleViewController.m; sourceTree = "<group>"; };
+		C6E9E9E82F7CC680004DEABB /* GGMGJTypeSafeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGMGJTypeSafeViewController.h; sourceTree = "<group>"; };
+		C6E9E9E92F7CC680004DEABB /* GGMGJTypeSafeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGMGJTypeSafeViewController.m; sourceTree = "<group>"; };
+		C6E9E9EA2F7CC680004DEABB /* GGRouterEventDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGRouterEventDemoViewController.h; sourceTree = "<group>"; };
+		C6E9E9EB2F7CC680004DEABB /* GGRouterEventDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGRouterEventDemoViewController.m; sourceTree = "<group>"; };
+		C6E9E9ED2F7CC680004DEABB /* GGUserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGUserInfoModel.h; sourceTree = "<group>"; };
+		C6E9E9EE2F7CC680004DEABB /* GGUserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGUserInfoModel.m; sourceTree = "<group>"; };
+		C6E9E9EF2F7CC680004DEABB /* GGUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGUserManager.h; sourceTree = "<group>"; };
+		C6E9E9F02F7CC680004DEABB /* GGUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGUserManager.m; sourceTree = "<group>"; };
+		C6E9E9F22F7CC680004DEABB /* GGUserModuleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGUserModuleManager.h; sourceTree = "<group>"; };
+		C6E9E9F32F7CC680004DEABB /* GGUserModuleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGUserModuleManager.m; sourceTree = "<group>"; };
+		C6E9EA012F7CC728004DEABB /* GGJSONConvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGJSONConvert.h; sourceTree = "<group>"; };
+		C6E9EA022F7CC728004DEABB /* GGJSONConvert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGJSONConvert.m; sourceTree = "<group>"; };
 		E9976074FBB3E4EF9A48E2B1 /* Pods-GGMGJRouter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGMGJRouter_Tests.debug.xcconfig"; path = "Target Support Files/Pods-GGMGJRouter_Tests/Pods-GGMGJRouter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +178,14 @@
 		6003F593195388D20070C39A /* Example for GGMGJRouter */ = {
 			isa = PBXGroup;
 			children = (
+				C6E9EA032F7CC728004DEABB /* AppFundation(App基础库) */,
+				C6E9E9DF2F7CC680004DEABB /* Search(搜索模块) */,
+				C6E9E9EC2F7CC680004DEABB /* TestDemo(示例) */,
+				C6E9E9F42F7CC680004DEABB /* UserModule(用户信息模块) */,
+				C6E9E9D12F7CC663004DEABB /* GGRecommendSearchWordsJSON.json */,
+				C6E9E9D22F7CC663004DEABB /* GGUserInfoJSON.json */,
+				C6E9E9D32F7CC663004DEABB /* SceneDelegate.h */,
+				C6E9E9D42F7CC663004DEABB /* SceneDelegate.m */,
 				6003F59C195388D20070C39A /* GGAppDelegate.h */,
 				6003F59D195388D20070C39A /* GGAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -193,8 +247,77 @@
 				E9976074FBB3E4EF9A48E2B1 /* Pods-GGMGJRouter_Tests.debug.xcconfig */,
 				7321DD6EC6C7B42F56F0226A /* Pods-GGMGJRouter_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C6E9E9DC2F7CC680004DEABB /* Recommend(推荐) */ = {
+			isa = PBXGroup;
+			children = (
+				C6E9E9D82F7CC680004DEABB /* GGRecommendSearchWordsManager.h */,
+				C6E9E9D92F7CC680004DEABB /* GGRecommendSearchWordsManager.m */,
+				C6E9E9DA2F7CC680004DEABB /* GGRecommendSearchWordsModel.h */,
+				C6E9E9DB2F7CC680004DEABB /* GGRecommendSearchWordsModel.m */,
+			);
+			path = "Recommend(推荐)";
+			sourceTree = "<group>";
+		};
+		C6E9E9DF2F7CC680004DEABB /* Search(搜索模块) */ = {
+			isa = PBXGroup;
+			children = (
+				C6E9E9DC2F7CC680004DEABB /* Recommend(推荐) */,
+				C6E9E9DD2F7CC680004DEABB /* GGSearchModuleManager.h */,
+				C6E9E9DE2F7CC680004DEABB /* GGSearchModuleManager.m */,
+			);
+			path = "Search(搜索模块)";
+			sourceTree = "<group>";
+		};
+		C6E9E9EC2F7CC680004DEABB /* TestDemo(示例) */ = {
+			isa = PBXGroup;
+			children = (
+				C6E9E9E02F7CC680004DEABB /* GGInitModulesViewController.h */,
+				C6E9E9E12F7CC680004DEABB /* GGInitModulesViewController.m */,
+				C6E9E9E22F7CC680004DEABB /* GGMGJDebugViewController.h */,
+				C6E9E9E32F7CC680004DEABB /* GGMGJDebugViewController.m */,
+				C6E9E9E42F7CC680004DEABB /* GGMGJInterceptorViewController.h */,
+				C6E9E9E52F7CC680004DEABB /* GGMGJInterceptorViewController.m */,
+				C6E9E9E62F7CC680004DEABB /* GGMGJLifecycleViewController.h */,
+				C6E9E9E72F7CC680004DEABB /* GGMGJLifecycleViewController.m */,
+				C6E9E9E82F7CC680004DEABB /* GGMGJTypeSafeViewController.h */,
+				C6E9E9E92F7CC680004DEABB /* GGMGJTypeSafeViewController.m */,
+				C6E9E9EA2F7CC680004DEABB /* GGRouterEventDemoViewController.h */,
+				C6E9E9EB2F7CC680004DEABB /* GGRouterEventDemoViewController.m */,
+			);
+			path = "TestDemo(示例)";
+			sourceTree = "<group>";
+		};
+		C6E9E9F12F7CC680004DEABB /* UserManager */ = {
+			isa = PBXGroup;
+			children = (
+				C6E9E9ED2F7CC680004DEABB /* GGUserInfoModel.h */,
+				C6E9E9EE2F7CC680004DEABB /* GGUserInfoModel.m */,
+				C6E9E9EF2F7CC680004DEABB /* GGUserManager.h */,
+				C6E9E9F02F7CC680004DEABB /* GGUserManager.m */,
+			);
+			path = UserManager;
+			sourceTree = "<group>";
+		};
+		C6E9E9F42F7CC680004DEABB /* UserModule(用户信息模块) */ = {
+			isa = PBXGroup;
+			children = (
+				C6E9E9F12F7CC680004DEABB /* UserManager */,
+				C6E9E9F22F7CC680004DEABB /* GGUserModuleManager.h */,
+				C6E9E9F32F7CC680004DEABB /* GGUserModuleManager.m */,
+			);
+			path = "UserModule(用户信息模块)";
+			sourceTree = "<group>";
+		};
+		C6E9EA032F7CC728004DEABB /* AppFundation(App基础库) */ = {
+			isa = PBXGroup;
+			children = (
+				C6E9EA012F7CC728004DEABB /* GGJSONConvert.h */,
+				C6E9EA022F7CC728004DEABB /* GGJSONConvert.m */,
+			);
+			path = "AppFundation(App基础库)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +371,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = github6022244;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = T2F27PSC94;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +384,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -279,6 +406,8 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				C6E9E9D52F7CC663004DEABB /* GGUserInfoJSON.json in Resources */,
+				C6E9E9D62F7CC663004DEABB /* GGRecommendSearchWordsJSON.json in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -347,10 +476,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GGMGJRouter_Example/Pods-GGMGJRouter_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GGMGJRouter/GGMGJRouter.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GGMGJRouter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QMUIKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -365,8 +498,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* GGAppDelegate.m in Sources */,
+				C6E9E9F52F7CC680004DEABB /* GGRouterEventDemoViewController.m in Sources */,
+				C6E9E9F62F7CC680004DEABB /* GGMGJTypeSafeViewController.m in Sources */,
+				C6E9E9F72F7CC680004DEABB /* GGSearchModuleManager.m in Sources */,
+				C6E9E9F82F7CC680004DEABB /* GGInitModulesViewController.m in Sources */,
+				C6E9E9F92F7CC680004DEABB /* GGMGJLifecycleViewController.m in Sources */,
+				C6E9E9FA2F7CC680004DEABB /* GGUserManager.m in Sources */,
+				C6E9EA042F7CC728004DEABB /* GGJSONConvert.m in Sources */,
+				C6E9E9FB2F7CC680004DEABB /* GGRecommendSearchWordsManager.m in Sources */,
+				C6E9E9FC2F7CC680004DEABB /* GGUserInfoModel.m in Sources */,
+				C6E9E9FD2F7CC680004DEABB /* GGRecommendSearchWordsModel.m in Sources */,
+				C6E9E9FE2F7CC680004DEABB /* GGMGJInterceptorViewController.m in Sources */,
+				C6E9E9FF2F7CC680004DEABB /* GGMGJDebugViewController.m in Sources */,
+				C6E9EA002F7CC680004DEABB /* GGUserModuleManager.m in Sources */,
 				6003F5A7195388D20070C39A /* GGViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				C6E9E9D72F7CC663004DEABB /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +641,7 @@
 			baseConfigurationReference = 34219645F92EC2475B0AE6B5 /* Pods-GGMGJRouter_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T2F27PSC94;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GGMGJRouter/GGMGJRouter-Prefix.pch";
 				INFOPLIST_FILE = "GGMGJRouter/GGMGJRouter-Info.plist";
@@ -510,6 +658,7 @@
 			baseConfigurationReference = 392E104D7A1EF425C43686B5 /* Pods-GGMGJRouter_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T2F27PSC94;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GGMGJRouter/GGMGJRouter-Prefix.pch";
 				INFOPLIST_FILE = "GGMGJRouter/GGMGJRouter-Info.plist";

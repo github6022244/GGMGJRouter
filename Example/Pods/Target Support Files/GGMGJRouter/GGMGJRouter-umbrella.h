@@ -10,6 +10,20 @@
 #endif
 #endif
 
+#import "GGMGJComponentLifecycle.h"
+#import "GGMGJRouter.h"
+#import "GGMGJRouterDebugViewController.h"
+#import "GGMGJRouterDebugWindow.h"
+#import "GGMGJRouterInterceptor.h"
+#import "GGMGJRouterRequest.h"
+#import "MGJRouter+GG.h"
+#import "MGJRouter+GGModuleInitializer.h"
+#import "MGJRouter.h"
+#import "MGJRouterGGDefine.h"
+#import "MGJRouterParam.h"
+#import "NSURL+GGMGJRouter.h"
+#import "UIViewController+GGMGJ.h"
+#import "UIWindow+GGMGJ.h"
 
 FOUNDATION_EXPORT double GGMGJRouterVersionNumber;
 FOUNDATION_EXPORT const unsigned char GGMGJRouterVersionString[];

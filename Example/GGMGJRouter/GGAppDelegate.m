@@ -2,17 +2,30 @@
 //  GGAppDelegate.m
 //  GGMGJRouter
 //
-//  Created by github6022244 on 04/01/2026.
+//  Created by github6022244 on 03/30/2026.
 //  Copyright (c) 2026 github6022244. All rights reserved.
 //
 
 #import "GGAppDelegate.h"
 
+#import <MGJRouter+GGModuleInitializer.h>
+
+#import "GGMGJDebugViewController.h"
+
 @implementation GGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [MGJRouter activateModulesForStage:GGModuleInitializerStageAppFinishLaunching];
+    
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        
+//    GGMGJDebugViewController *vc = [[GGMGJDebugViewController alloc] init];
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+//
+//    self.window.rootViewController = nav;
+//    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
