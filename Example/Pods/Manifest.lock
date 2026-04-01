@@ -1,5 +1,5 @@
 PODS:
-  - GGMGJRouter (1.0.0)
+  - GGMGJRouter (1.0.1)
   - MJExtension (3.4.2)
   - QMUIKit (4.8.0):
     - QMUIKit/QMUIComponents (= 4.8.0)
@@ -333,7 +333,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GGMGJRouter: b8a2bafa3466b219a7ee40cc9d8a881e7c8e05b1
+  GGMGJRouter: 1dae4df4f2c2406be17cfa585f77b16ef0fe2ea9
   MJExtension: e97d164cb411aa9795cf576093a1fa208b4a8dd8
   QMUIKit: 3c622fe3c55c0dccfad750634bd9ee5e7ade9a53
 

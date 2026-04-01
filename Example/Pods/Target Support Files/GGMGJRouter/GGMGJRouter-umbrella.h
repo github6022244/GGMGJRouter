@@ -11,15 +11,15 @@
 #endif
 
 #import "GGMGJComponentLifecycle.h"
+#import "GGMGJRouter+GGModuleInitializer.h"
 #import "GGMGJRouter.h"
 #import "GGMGJRouterDebugViewController.h"
 #import "GGMGJRouterDebugWindow.h"
+#import "GGMGJRouterDefine.h"
 #import "GGMGJRouterInterceptor.h"
 #import "GGMGJRouterRequest.h"
 #import "MGJRouter+GG.h"
-#import "MGJRouter+GGModuleInitializer.h"
 #import "MGJRouter.h"
-#import "GGMGJRouterDefine.h"
 #import "MGJRouterParam.h"
 #import "NSURL+GGMGJRouter.h"
 #import "UIViewController+GGMGJ.h"
