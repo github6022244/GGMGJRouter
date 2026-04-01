@@ -1,21 +1,21 @@
 //
-//  MGJRouter+GGModuleInitializer.h
+//  GGMGJRouter+GGModuleInitializer.h
 //  CommeniOSAppFundation
 //
 //  Created by GG on 2026/3/27.
 //
 
-#import "MGJRouter.h"
+#import "GGMGJRouter.h"
 
 @class MGJRouterModule;
 
 NS_ASSUME_NONNULL_BEGIN
 
 /// module初始化block
-typedef void(^MGJModuleInitializationBlock)(void);
+typedef void(^GGMGJModuleInitializationBlock)(void);
 
 /// module自检是否需要初始化block，return 是否需要
-typedef BOOL(^MGJModuleCheckNeedInitBlock)(void);
+typedef BOOL(^GGMGJModuleCheckNeedInitBlock)(void);
 
 /// module初始化时机定义
 typedef NS_ENUM(NSInteger, GGModuleInitializerStage) {
@@ -27,10 +27,10 @@ typedef NS_ENUM(NSInteger, GGModuleInitializerStage) {
     GGModuleInitializerStageFirstScreenReady = 0,
 };
 
-@interface MGJRouter (GGModuleInitializer)
+@interface GGMGJRouter (GGModuleInitializer)
 
 // 注册module初始化，必须在每个module的+load里执行
-+ (void)registerURLPattern:(NSString *)URLPattern moduleInitializerStage:(GGModuleInitializerStage)stage priority:(NSInteger)priority checkNeedInitBlock:(MGJModuleCheckNeedInitBlock)checkNeedInitBlock initBlock:(MGJModuleInitializationBlock)initBlock;
++ (void)registerURLPattern:(NSString *)URLPattern moduleInitializerStage:(GGModuleInitializerStage)stage priority:(NSInteger)priority checkNeedInitBlock:(GGMGJModuleCheckNeedInitBlock)checkNeedInitBlock initBlock:(GGMGJModuleInitializationBlock)initBlock;
 
 // App在不同阶段调用此方法，来激活该阶段的路由，不要在自己module中使用，由主app控制
 + (void)activateModulesForStage:(GGModuleInitializerStage)stage;
@@ -43,7 +43,7 @@ typedef NS_ENUM(NSInteger, GGModuleInitializerStage) {
 
 
 
-@interface MGJRouterModule : NSObject
+@interface GGMGJRouterModule : NSObject
 
 /// url
 @property (nonatomic, copy) NSString *URLPattern;
@@ -55,12 +55,12 @@ typedef NS_ENUM(NSInteger, GGModuleInitializerStage) {
 @property (nonatomic, assign) NSInteger priority;
 
 /// module自检是否需要初始化block，return 是否需要
-@property (nonatomic, copy) MGJModuleCheckNeedInitBlock checkNeedInitBlock;
+@property (nonatomic, copy) GGMGJModuleCheckNeedInitBlock checkNeedInitBlock;
 
 /// 初始化block
-@property (nonatomic, copy) MGJModuleInitializationBlock initBlock;
+@property (nonatomic, copy) GGMGJModuleInitializationBlock initBlock;
 
-- (instancetype)initWithURLPattern:(NSString *)URLPattern stage:(GGModuleInitializerStage)stage priority:(NSInteger)priority checkNeedInitBlock:(MGJModuleCheckNeedInitBlock)checkNeedInitBlock initBlock:(MGJModuleInitializationBlock)initBlock;
+- (instancetype)initWithURLPattern:(NSString *)URLPattern stage:(GGModuleInitializerStage)stage priority:(NSInteger)priority checkNeedInitBlock:(GGMGJModuleCheckNeedInitBlock)checkNeedInitBlock initBlock:(GGMGJModuleInitializationBlock)initBlock;
 
 /// 检查是否需要初始化
 - (BOOL)checkNeedInit;

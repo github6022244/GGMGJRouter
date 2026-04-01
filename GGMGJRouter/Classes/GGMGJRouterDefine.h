@@ -1,5 +1,5 @@
 //
-//  MGJRouterGGDefine.h
+//  GGMGJRouterDefine.h
 //  GGCommenAppFundation
 //
 //  Created by GG on 2022/6/27.

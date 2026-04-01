@@ -6,7 +6,7 @@
 //
 
 #import "MGJRouter.h"
-#import "MGJRouterGGDefine.h"
+#import "GGMGJRouterDefine.h"
 #import "MGJRouterParam.h"
 
 NS_ASSUME_NONNULL_BEGIN

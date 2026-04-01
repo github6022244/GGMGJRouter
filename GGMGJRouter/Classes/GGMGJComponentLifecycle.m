@@ -6,7 +6,7 @@
 //
 
 #import "GGMGJComponentLifecycle.h"
-#import "MGJRouterGGDefine.h"
+#import "GGMGJRouterDefine.h"
 
 // 关联对象 Key
 static char kLifecycleTasksKey;

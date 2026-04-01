@@ -7,7 +7,7 @@
 //
 
 #import "GGViewController.h"
-#import <MGJRouter+GGModuleInitializer.h>
+#import <GGMGJRouter+GGModuleInitializer.h>
 #import <MGJRouter+GG.h>
 
 @interface GGViewController () <UITableViewDataSource, UITableViewDelegate>

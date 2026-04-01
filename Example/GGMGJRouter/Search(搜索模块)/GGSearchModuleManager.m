@@ -10,7 +10,7 @@
 
 #import "GGRecommendSearchWordsManager.h"
 
-#import <MGJRouter+GGModuleInitializer.h>
+#import <GGMGJRouter+GGModuleInitializer.h>
 #import <MGJRouter+GG.h>
 
 @implementation GGSearchModuleManager
@@ -21,7 +21,7 @@ static BOOL _moduleDidInit = NO;
 + (void)load {
     // 初始化
     // 这里首屏渲染后初始化，优先级低
-    [MGJRouter registerURLPattern:@"search://init" moduleInitializerStage:GGModuleInitializerStageFirstScreenReady priority:800 checkNeedInitBlock:^BOOL{
+    [GGMGJRouter registerURLPattern:@"search://init" moduleInitializerStage:GGModuleInitializerStageFirstScreenReady priority:800 checkNeedInitBlock:^BOOL{
         return !self.moduleDidInit;
     } initBlock:^{
         // 推荐搜索词初始化

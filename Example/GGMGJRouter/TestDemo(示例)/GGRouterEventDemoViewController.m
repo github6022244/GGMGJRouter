@@ -7,7 +7,7 @@
 
 #import "GGRouterEventDemoViewController.h"
 
-#import <MGJRouter+GGModuleInitializer.h>
+#import <GGMGJRouter+GGModuleInitializer.h>
 #import <GGMGJRouter.h>
 
 @interface GGRouterEventDemoViewController ()

@@ -11,7 +11,7 @@
 #import "GGUserManager.h"
 #import "MJExtension.h"
 
-#import "MGJRouter+GGModuleInitializer.h"
+#import "GGMGJRouter+GGModuleInitializer.h"
 
 @implementation GGUserModuleManager
 
@@ -21,7 +21,7 @@ static BOOL _moduleDidInit = NO;
 + (void)load {
     // 用户模块初始化
     // 这里在app launch后直接初始化，优先级最高
-    [MGJRouter registerURLPattern:@"user://init" moduleInitializerStage:GGModuleInitializerStageAppFinishLaunching priority:900 checkNeedInitBlock:^BOOL{
+    [GGMGJRouter registerURLPattern:@"user://init" moduleInitializerStage:GGModuleInitializerStageAppFinishLaunching priority:900 checkNeedInitBlock:^BOOL{
         return !self.moduleDidInit;
     } initBlock:^{
         // UserManager初始化

@@ -7,7 +7,7 @@
 
 #import "GGMGJRouterDebugWindow.h"
 #import "GGMGJRouter.h"
-#import "MGJRouterGGDefine.h"
+#import "GGMGJRouterDefine.h"
 #import "UIViewController+GGMGJ.h"
 #import "GGMGJRouterDebugViewController.h"
 

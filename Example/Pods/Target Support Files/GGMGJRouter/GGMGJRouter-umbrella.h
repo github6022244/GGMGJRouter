@@ -19,7 +19,7 @@
 #import "MGJRouter+GG.h"
 #import "MGJRouter+GGModuleInitializer.h"
 #import "MGJRouter.h"
-#import "MGJRouterGGDefine.h"
+#import "GGMGJRouterDefine.h"
 #import "MGJRouterParam.h"
 #import "NSURL+GGMGJRouter.h"
 #import "UIViewController+GGMGJ.h"

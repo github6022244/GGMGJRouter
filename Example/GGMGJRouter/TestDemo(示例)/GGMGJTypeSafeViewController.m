@@ -14,7 +14,7 @@
         NSDictionary *senderData = param.senderData.data;
         NSString *logStr = [NSString stringWithFormat:@"收到路由：data = %@", senderData];
         
-        [QMUIConsole log:logStr];
+        NSLog(@"%@", logStr);
         
         if (param.senderData.completion) {
             param.senderData.completion(@"get it");
@@ -61,10 +61,10 @@
                      .appendFloatParam(@"score", @(98.5), YES);
     
     NSString *url = [request buildURL];
-    [QMUIConsole log:[NSString stringWithFormat:@"生成的 URL: %@", url]];
+    NSLog(@"生成的 URL: %@", url);
     
     [GGMGJRouter openRequest:request completion:^(id result) {
-        [QMUIConsole log:[NSString stringWithFormat:@"跳转完成：%@", result]];
+        NSLog(@"跳转完成：%@", result);
     }];
 }
 

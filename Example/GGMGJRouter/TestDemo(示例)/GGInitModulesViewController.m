@@ -6,7 +6,7 @@
 //
 
 #import "GGInitModulesViewController.h"
-#import <MGJRouter+GGModuleInitializer.h>
+#import <GGMGJRouter+GGModuleInitializer.h>
 #import <GGMGJRouter.h>
 
 @interface GGInitModulesViewController ()
@@ -26,7 +26,7 @@
     [self setupUI];
     
     // 首屏渲染完成初始化模块 (保持原有逻辑)，正常可以放入window的rootViewController、首页UI渲染完成后调用
-    [MGJRouter activateModulesForStage:GGModuleInitializerStageFirstScreenReady];
+    [GGMGJRouter activateModulesForStage:GGModuleInitializerStageFirstScreenReady];
     
     [self startScrollingWords];
 }

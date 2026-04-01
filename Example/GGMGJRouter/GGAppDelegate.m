@@ -8,7 +8,7 @@
 
 #import "GGAppDelegate.h"
 
-#import <MGJRouter+GGModuleInitializer.h>
+#import <GGMGJRouter+GGModuleInitializer.h>
 
 #import "GGMGJDebugViewController.h"
 
@@ -16,7 +16,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [MGJRouter activateModulesForStage:GGModuleInitializerStageAppFinishLaunching];
+    [GGMGJRouter activateModulesForStage:GGModuleInitializerStageAppFinishLaunching];
     
 //    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
         

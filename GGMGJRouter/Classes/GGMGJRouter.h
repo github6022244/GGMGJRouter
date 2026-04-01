@@ -11,12 +11,11 @@
 #import "MGJRouter.h"
 #import "MGJRouterParam.h"
 #import "GGMGJRouterRequest.h"
-//#import "GGMGJRouterBuilder.h"
 #import "GGMGJRouterInterceptor.h"
 #import "GGMGJComponentLifecycle.h"
 #import "GGMGJRouterDebugWindow.h"
 
-#import "MGJRouterGGDefine.h"
+#import "GGMGJRouterDefine.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

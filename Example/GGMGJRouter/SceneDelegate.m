@@ -1,7 +1,7 @@
 // SceneDelegate.m
 #import "SceneDelegate.h"
 #import "GGViewController.h"
-#import <MGJRouter+GGModuleInitializer.h>
+#import <GGMGJRouter+GGModuleInitializer.h>
 
 @implementation SceneDelegate
 
@@ -18,7 +18,7 @@
     }
     
     // 启动注册在sceneconnect的模块
-    [MGJRouter activateModulesForStage:GGModuleInitializerStageSceneWillConnectToSession];
+    [GGMGJRouter activateModulesForStage:GGModuleInitializerStageSceneWillConnectToSession];
 }
 
 @end

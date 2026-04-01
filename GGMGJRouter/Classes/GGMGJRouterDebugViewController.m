@@ -7,7 +7,7 @@
 
 #import "GGMGJRouterDebugViewController.h"
 #import "GGMGJRouter.h"
-#import "MGJRouterGGDefine.h"
+#import "GGMGJRouterDefine.h"
 #import "GGMGJRouterDebugWindow.h"
 
 @interface GGMGJRouterDebugViewController () <UITableViewDataSource, UITableViewDelegate>

@@ -1,11 +1,11 @@
 //
-//  MGJRouter+GGModuleInitializer.m
+//  GGMGJRouter+GGModuleInitializer.m
 //  CommeniOSAppFundation
 //
 //  Created by GG on 2026/3/27.
 //
 
-#import "MGJRouter+GGModuleInitializer.h"
+#import "GGMGJRouter+GGModuleInitializer.h"
 
 #import <objc/runtime.h>
 
@@ -14,7 +14,7 @@ static dispatch_queue_t sActivationQueue = NULL;
 /// 保存stage与module数组的字典
 static NSMutableDictionary<NSNumber *, NSMutableArray<MGJRouterModule *> *> *sPendingModulesByStage = nil;
 
-@implementation MGJRouter (GGModuleInitializer)
+@implementation GGMGJRouter (GGModuleInitializer)
 
 #pragma mark ------------------------- Cycle -------------------------
 + (void)load {
@@ -24,13 +24,13 @@ static NSMutableDictionary<NSNumber *, NSMutableArray<MGJRouterModule *> *> *sPe
 
 #pragma mark ------------------------- Interface -------------------------
 // 注册module初始化时机
-+ (void)registerURLPattern:(NSString *)URLPattern moduleInitializerStage:(GGModuleInitializerStage)stage priority:(NSInteger)priority checkNeedInitBlock:(MGJModuleCheckNeedInitBlock)checkNeedInitBlock initBlock:(MGJModuleInitializationBlock)initBlock {
++ (void)registerURLPattern:(NSString *)URLPattern moduleInitializerStage:(GGModuleInitializerStage)stage priority:(NSInteger)priority checkNeedInitBlock:(GGMGJModuleCheckNeedInitBlock)checkNeedInitBlock initBlock:(GGMGJModuleInitializationBlock)initBlock {
     if (!URLPattern || !initBlock) {
         [self log:[NSString stringWithFormat:@"模块初始化参数有误，URLPattern: %@，initBlock: %@", URLPattern, initBlock]];
         return;
     }
     
-    MGJRouterModule *pendingModule = [[MGJRouterModule alloc] initWithURLPattern:URLPattern stage:stage priority:priority checkNeedInitBlock:checkNeedInitBlock initBlock:initBlock];
+    GGMGJRouterModule *pendingModule = [[GGMGJRouterModule alloc] initWithURLPattern:URLPattern stage:stage priority:priority checkNeedInitBlock:checkNeedInitBlock initBlock:initBlock];
     
     // 保存
     [self _saveAModuleRegist:pendingModule];
@@ -46,12 +46,12 @@ static NSMutableDictionary<NSNumber *, NSMutableArray<MGJRouterModule *> *> *sPe
         }
         
         // 按priority倒序排序
-        NSArray *sortedModules = [stageModulesArray sortedArrayUsingComparator:^NSComparisonResult(MGJRouterModule * _Nonnull obj1, MGJRouterModule * _Nonnull obj2) {
+        NSArray *sortedModules = [stageModulesArray sortedArrayUsingComparator:^NSComparisonResult(GGMGJRouterModule * _Nonnull obj1, GGMGJRouterModule * _Nonnull obj2) {
             return [@(obj2.priority) compare:@(obj1.priority)];
         }];
         
         // 初始化
-        for (MGJRouterModule *module in sortedModules) {
+        for (GGMGJRouterModule *module in sortedModules) {
             BOOL needInit = [module checkNeedInit];
             
             if (needInit) {
@@ -85,7 +85,7 @@ static NSMutableDictionary<NSNumber *, NSMutableArray<MGJRouterModule *> *> *sPe
 }
 
 /// 保存某个注册的module
-+ (void)_saveAModuleRegist:(MGJRouterModule *)pendingModule {
++ (void)_saveAModuleRegist:(GGMGJRouterModule *)pendingModule {
     [self asyncSerialQueueBlock:^{
         NSMutableArray *modules = [self _getModuleArrayForStage:pendingModule.stage];
         
@@ -94,7 +94,7 @@ static NSMutableDictionary<NSNumber *, NSMutableArray<MGJRouterModule *> *> *sPe
 }
 
 /// 根据stage获取对应的module数组
-+ (NSMutableArray<MGJRouterModule *> *)_getModuleArrayForStage:(GGModuleInitializerStage)stage {
++ (NSMutableArray<GGMGJRouterModule *> *)_getModuleArrayForStage:(GGModuleInitializerStage)stage {
     NSNumber *stageKey = @(stage);
     NSMutableArray *modules = [self _modulesDict][stageKey];
     if (!modules) {
@@ -150,9 +150,9 @@ static NSMutableDictionary<NSNumber *, NSMutableArray<MGJRouterModule *> *> *sPe
 
 
 
-@implementation MGJRouterModule
+@implementation GGMGJRouterModule
 
-- (instancetype)initWithURLPattern:(NSString *)URLPattern stage:(GGModuleInitializerStage)stage priority:(NSInteger)priority checkNeedInitBlock:(MGJModuleCheckNeedInitBlock)checkNeedInitBlock initBlock:(MGJModuleInitializationBlock)initBlock {
+- (instancetype)initWithURLPattern:(NSString *)URLPattern stage:(GGModuleInitializerStage)stage priority:(NSInteger)priority checkNeedInitBlock:(GGMGJModuleCheckNeedInitBlock)checkNeedInitBlock initBlock:(GGMGJModuleInitializationBlock)initBlock {
     if (self = [super init]) {
         _URLPattern = URLPattern;
         _stage = stage;
